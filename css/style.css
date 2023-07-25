@@ -68,9 +68,57 @@ a{
     align-items: center;
     margin: 0px;
 }
-
-
-
+.icono-menu{
+    display: none;
+}
+.letras-usuario{
+    display: none;
+}
+@media (max-width: 768px){
+    .usuario{
+        display: none;
+    }
+    .letras-usuario{
+        display: block;
+    }
+    .navegador{
+        position: sticky;
+        top: 0px;
+        height: 40px;
+        align-items: center;
+        padding: 0px 20px;
+    }
+    .inicio-contacto{
+        position: fixed;
+        top: 0px;
+        left: -300px;
+        width: 250px;
+        height: 100vh;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+        background-color: var(--gris-claro);
+        padding: 20px 0px 0px 20px;
+        transition: 1s;
+    }
+    .letras-enlaces-navegador{
+        color: var(--negro);
+        padding: 0px;
+        margin: 0px;
+    }
+    .icono-menu{
+        display: block;
+    }
+    .navegador .icono-menu:hover + ul{
+        left: 0px;
+    }
+    .navegador ul:hover{
+        left: 0px;
+    }
+    .buscador-carrito-usuario .carrito{
+        margin-right: 0px;
+    }
+}
 /* main index */
 
 
@@ -97,9 +145,29 @@ a{
     padding: 15px 0px;
     font-size: 25px;
 }
-
-
-
+@media (max-width: 768px){
+    .imagen-categoria{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 1px solid var(--negro);
+        margin: 15px 0px;
+        object-fit: cover;
+    }
+    .produtos-destacados{
+        font-size: 20px;
+    }
+}
+@media (max-width: 576px){
+    .imagen-categoria{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        border: 1px solid var(--negro);
+        margin: 15px 0px;
+        object-fit: cover;
+    }
+}
 .cajas-todos-productos{
     display: flex;
     justify-content: space-evenly;
@@ -124,9 +192,45 @@ a{
     height: 200px;
     object-fit: cover;
 }
+@media (max-width: 768px){
+    .cajas-todos-productos{
+        padding: 30px;
+    }
+    .caja-producto{
+        width: 225px;
+        height: 275px;
+    }
+    .imagen-caja-producto{
+        width: 175px;
+        height: 175px;
+    }
+    .caja-producto p{
+        font-size: 14px;
+    }
+    .caja-producto h3{
+        font-size: 22px;
+    }
+}
+@media (max-width: 576px){
+    .cajas-todos-productos{
+        padding: 20px;
+    }
+    .caja-producto{
+        width: 200px;
+        height: 250px;
+    }
+    .imagen-caja-producto{
+        width: 150px;
+        height: 150px;
+    }
+    .caja-producto p{
+        font-size: 12px;
+    }
+    .caja-producto h3{
+        font-size: 20px;
+    }
 
-
-
+}
 .enlace-whatsapp{
     position: fixed;
     right: 30px;
