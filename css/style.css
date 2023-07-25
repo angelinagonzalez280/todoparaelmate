@@ -15,9 +15,12 @@ a{
     text-decoration: none; 
     color: var(--negro);
 }
-
-
-
+p{
+    margin: 0px;
+}
+h3{
+    margin: 0px;
+}
 .icon{
     width: 24px;
     height: 24px;
@@ -120,9 +123,28 @@ a{
     }
 }
 /* main index */
-
-
-
+.carousel{
+    z-index: -1;
+}
+.d-block{
+    height: 400px;
+    width: 100%;
+    object-fit: contain;
+}
+@media (max-width: 768px){
+    .d-block{
+        height: 300px;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+@media (max-width: 576px){
+    .d-block{
+        height: 200px;
+        width: 100%;
+        object-fit: contain;
+    }
+}
 .categorias-productos{
     display: flex;
     justify-content: space-around;
