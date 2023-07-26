@@ -30,6 +30,9 @@ h3{
     stroke-linecap: round; /*esta y la propiedad de abajo le dan el redondeado a los bordes*/
     stroke-linejoin: round;
 }
+nav {
+    z-index: 1000;
+}
 
 /* header */
 .titulo{
@@ -123,9 +126,7 @@ h3{
     }
 }
 /* main index */
-.carousel{
-    z-index: -1;
-}
+
 .d-block{
     height: 400px;
     width: 100%;
