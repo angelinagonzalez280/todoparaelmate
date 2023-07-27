@@ -20,6 +20,7 @@ p{
 }
 h3{
     margin: 0px;
+    font-weight: bold;
 }
 .icon{
     width: 24px;
@@ -126,7 +127,6 @@ nav {
     }
 }
 /* main index */
-
 .d-block{
     height: 400px;
     width: 100%;
@@ -166,7 +166,7 @@ nav {
     text-align: center;
     text-transform: uppercase;
     padding: 15px 0px;
-    font-size: 25px;
+    font-size: 24px;
 }
 @media (max-width: 768px){
     .imagen-categoria{
@@ -176,9 +176,6 @@ nav {
         border: 1px solid var(--negro);
         margin: 15px 0px;
         object-fit: cover;
-    }
-    .produtos-destacados{
-        font-size: 20px;
     }
 }
 @media (max-width: 576px){
@@ -236,11 +233,12 @@ nav {
 }
 @media (max-width: 576px){
     .cajas-todos-productos{
-        padding: 20px;
+        padding: 5px;
     }
     .caja-producto{
-        width: 200px;
-        height: 250px;
+        width: 180px;
+        height: 220px;
+        margin: 10px;
     }
     .imagen-caja-producto{
         width: 150px;
@@ -250,7 +248,7 @@ nav {
         font-size: 12px;
     }
     .caja-producto h3{
-        font-size: 20px;
+        font-size: 18px;
     }
 
 }
@@ -337,6 +335,7 @@ nav {
     text-align: center;
     padding: 20px 0px;
     text-transform: uppercase;
+    font-size: 24px;
 }
 
 /* formulario de contacto */
@@ -353,6 +352,17 @@ nav {
 }
 .formulario-contacto{
     width: 700px;
+}
+
+@media (max-width: 768px){
+    .formulario-contacto{
+        width: 500px;
+    }
+}
+@media (max-width: 568px){
+    .formulario-contacto{
+        width: 400px;
+    }
 }
 .campo-formulario{
     width: 100%;
@@ -390,7 +400,7 @@ nav {
     margin: 10px;
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 90%;
     padding: 0px 20px;
 }
 .filtros{
@@ -399,6 +409,7 @@ nav {
     margin-top: 20px;
     height:max-content;
     border: 1px solid var(--negro);
+    border-radius: 5px;
 }
 .filtros h4{
     margin: 10px;
@@ -595,4 +606,10 @@ nav {
 }
 .descripcion p{
     padding-left: 10px;
+}
+
+@media (max-width: 768px){
+    h2{
+        font-size: 25px;
+    }
 }
