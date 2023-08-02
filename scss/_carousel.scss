@@ -1,0 +1,19 @@
+.d-block{
+    height: 400px;
+    width: 100%;
+    object-fit: contain;
+}
+@media (max-width: 768px){
+    .d-block{
+        height: 300px;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+@media (max-width: 576px){
+    .d-block{
+        height: 200px;
+        width: 100%;
+        object-fit: contain;
+    }
+}
