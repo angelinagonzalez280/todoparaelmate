@@ -1,3 +1,6 @@
+nav {
+    z-index: 1000;
+}
 .navegador{
     display: flex;
     justify-content: space-between;
@@ -7,74 +10,76 @@
     background-color: $color-gris;
     position: sticky;
     top: 0px;
-}
-.letras-enlaces-navegador{
-    font-size: 16px;
-    color: $color-blanco;
-    padding: 10px;
-}
-.inicio-contacto li{
-    list-style: none;
-}
-.buscador-carrito-usuario .carrito, .lupa{
-    margin-right: 15px;
-}
-.inicio-navegador{
-    margin-right: 15px;
-}
-.inicio-contacto{
-    height: 40px;
-    display: flex;
-    align-items: center;
-    margin: 0px;
-}
-.icono-menu{
-    display: none;
-}
-.letras-usuario{
-    display: none;
+    @media (max-width: 768px){
+            position: sticky;
+            top: 0px;
+            height: 40px;
+            align-items: center;
+            padding: 0px 20px;
+    }
+    .icono-menu{
+        display: none;
+        @media (max-width: 768px){
+            display: block;
+        }
+    }
+    .inicio-contacto{
+        height: 40px;
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        li{
+            list-style: none;
+        }
+        .letras-enlaces-navegador{
+            font-size: 16px;
+            color: $color-blanco; 
+            padding: 10px;
+            @media (max-width: 768px){
+                color: $color-negro;
+                padding: 0px;
+                margin: 0px;
+
+            }
+        }
+        .inicio-navegador{
+            margin-right: 15px;
+        }
+        @media (max-width: 768px){
+            position: fixed;
+            top: 0px;
+            left: -300px;
+            width: 250px;
+            height: 100vh;
+            flex-direction: column;
+            gap: 15px;
+            align-items: flex-start;
+            background-color: $color-gris-claro;
+            padding: 20px 0px 0px 20px;
+            transition: 1s;
+        }
+        .letras-usuario{
+            display: none;
+            padding-top: 0px;
+            @media (max-width: 768px){
+                display: block;
+            }
+        }
+    }
+    .buscador-carrito-usuario .carrito, .lupa{
+        margin-right: 15px;
+    }
+    ul:hover{
+        left: 0px;
+    }
 }
 @media (max-width: 768px){
     .usuario{
         display: none;
     }
-    .letras-usuario{
-        display: block;
-    }
-    .navegador{
-        position: sticky;
-        top: 0px;
-        height: 40px;
-        align-items: center;
-        padding: 0px 20px;
-    }
-    .inicio-contacto{
-        position: fixed;
-        top: 0px;
-        left: -300px;
-        width: 250px;
-        height: 100vh;
-        flex-direction: column;
-        gap: 15px;
-        align-items: flex-start;
-        background-color: $color-gris-claro;
-        padding: 20px 0px 0px 20px;
-        transition: 1s;
-    }
-    .letras-enlaces-navegador{
-        color: $color-negro;
-        padding: 0px;
-        margin: 0px;
-    }
-    .icono-menu{
-        display: block;
-    }
     .navegador .icono-menu:hover + ul{
         left: 0px;
-    }
-    .navegador ul:hover{
-        left: 0px;
-    }
+    } 
     .buscador-carrito-usuario .carrito{
         margin-right: 0px;
     }

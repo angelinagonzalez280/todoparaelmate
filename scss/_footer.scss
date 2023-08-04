@@ -10,27 +10,7 @@
     background-color: $color-negro;
     color: $color-blanco;
     font-size: 12px;
-}
-.footer__componentes--ubicacion-horario{
-    grid-area: ubicacion-horario;
-}
-.footer__componentes--mapa{
-    grid-area: mapa;
-    width: 200px;
-    height: 100px;
-}
-.footer__componentes--tarjeta-envios{
-    grid-area: tarjeta-envios;
-}
-.footer__componentes--ubicacion-horario, .footer__componentes--tarjeta-envios{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 200px;
-    text-align: center;
-}
-@media (max-width: 768px) {
-    .footer__componentes{
+    @media (max-width: 768px){
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -45,20 +25,63 @@
     }
     .footer__componentes--ubicacion-horario{
         grid-area: ubicacion-horario;
-        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 200px;
+        text-align: center;
+        @media (max-width: 768px){
+            grid-area: ubicacion-horario;
+            width: auto;
+        }
+        .footer__horario{
+            @media (max-width: 768px){
+                width: 150px;
+            }
+        }
+        .footer__horario{
+            @media (max-width: 768px){
+                width: 150px;
+            }
+        }
     }
     .footer__componentes--mapa{
         grid-area: mapa;
-        width: auto;
+        width: 200px;
+        height: 100px;
+        @media (max-width: 768px){
+            grid-area: mapa;
+            width: auto;
+        }
     }
-    .footer__componentes--tarjeta-envios{
-        grid-area: tarjeta;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-around;
+    .footer__mapa{
+        @media (max-width: 768px){
+            width: 150px;
+        }
     }
-    .footer__ubicacion, .footer__horario, .footer__mapa, .footer__tarjeta, .footer__envios{
-        width: 150px;
+}
+.footer__componentes--tarjeta-envios{
+    grid-area: tarjeta-envios;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    text-align: center;
+    @media (max-width: 768px){
+            grid-area: tarjeta;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+    }
+    .footer__tarjeta{
+        @media (max-width: 768px){
+            width: 150px;
+        }
+    }
+    .footer__envios{
+        @media (max-width: 768px){
+            width: 150px;
+        }
     }
 }

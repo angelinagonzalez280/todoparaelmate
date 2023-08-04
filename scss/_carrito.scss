@@ -4,51 +4,52 @@
     margin: 20px;
     align-items: center;
     padding: 40px 0px;
-}
-.producto{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin-bottom: 20px;
-}
-.imagen-titulo{
-    display: flex;
-    flex-direction: row;
-}
-.imagen-titulo p{
-    width: 400px;
-    margin: 10px;
-}
-.producto img{
-    width: 125px;
-    height: 125px;
-    object-fit: cover;
-    padding: 5px;
-}
-.cantidad-boton-eliminar{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 5px;
-}
-.cantidad-boton-eliminar input{
-    width: 80px;
-    height: 30px;
-    border-radius: 5px;
-    font-size: 16px;
-    text-align: center;
-    border: 0;
-    border: 1px solid $color-negro;
-}
-.precio-cuotas{
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-}
-.precio-cuotas p{
-    color: $color-gris-claro;
-    font-size: 10px;
+    .producto{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin-bottom: 20px;
+        
+        .imagen-titulo{
+            display: flex;
+            flex-direction: row;
+            img{
+                width: 125px;
+                height: 125px;
+                object-fit: cover;
+                padding: 5px;
+            }
+            p{
+                width: 400px;
+                margin: 10px;
+            }
+        }
+        .cantidad-boton-eliminar{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+            input{
+                width: 80px;
+                height: 30px;
+                border-radius: 5px;
+                font-size: 16px;
+                text-align: center;
+                border: 0;
+                border: 1px solid $color-negro;
+            }
+        }
+        .precio-cuotas{
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            p{
+                color: $color-gris-claro;
+                font-size: 10px;
+            }
+        }
+    }
 }
 .contenedor-totales{
     display: flex;
@@ -58,16 +59,17 @@
     align-items: end;
     gap: 10px;
     margin-top: 100px;
+    .totales{
+        display: flex;
+        justify-content: right;
+    }
+    .envio-total{
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: right;
+        gap:10px;
+    }
 }
-.totales{
-    display: flex;
-    justify-content: right;
-}
-.envio-total{
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    text-align: right;
-    gap:10px;
-}
+

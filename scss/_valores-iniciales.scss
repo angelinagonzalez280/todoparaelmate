@@ -1,5 +1,4 @@
 @import "variantes";
-
 *{
     padding: 0;
     margin: 0;
@@ -25,7 +24,4 @@ h3{
     fill: none;
     stroke-linecap: round; /*esta y la propiedad de abajo le dan el redondeado a los bordes*/
     stroke-linejoin: round;
-}
-nav {
-    z-index: 1000;
 }
