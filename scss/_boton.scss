@@ -31,4 +31,7 @@
 .boton-comprar, .boton-agregar{
     width: auto;
     height: 30px;
+    @media (max-width: 768px){
+        font-size: 16px;
+    }
 }
