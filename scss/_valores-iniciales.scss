@@ -1,0 +1,27 @@
+@import "variantes";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+}
+a{
+    text-decoration: none; 
+    color: $color-negro;
+}
+p{
+    margin: 0px;
+}
+h3{
+    margin: 0px;
+    font-weight: bold;
+}
+.icon{
+    width: 24px;
+    height: 24px;
+    stroke: $color-iconos;
+    stroke-width: 1.5px;
+    fill: none;
+    stroke-linecap: round; /*esta y la propiedad de abajo le dan el redondeado a los bordes*/
+    stroke-linejoin: round;
+}

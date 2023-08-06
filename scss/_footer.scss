@@ -1,0 +1,87 @@
+.footer__componentes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px;
+    grid-template-areas: "ubicacion-horario mapa tarjeta-envios";
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-items: center;
+    background-color: $color-negro;
+    color: $color-blanco;
+    font-size: 12px;
+    @media (max-width: 768px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "ubicacion-horario mapa" "tarjeta tarjeta";
+        gap: 10px;
+        padding: 10px;
+        justify-items: center;
+        align-items: center;
+        background-color:$color-negro;
+        color: $color-blanco;
+        font-size: 10px;
+    }
+    .footer__componentes--ubicacion-horario{
+        grid-area: ubicacion-horario;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 200px;
+        text-align: center;
+        @media (max-width: 768px){
+            grid-area: ubicacion-horario;
+            width: auto;
+        }
+        .footer__horario{
+            @media (max-width: 768px){
+                width: 150px;
+            }
+        }
+        .footer__horario{
+            @media (max-width: 768px){
+                width: 150px;
+            }
+        }
+    }
+    .footer__componentes--mapa{
+        grid-area: mapa;
+        width: 200px;
+        height: 100px;
+        @media (max-width: 768px){
+            grid-area: mapa;
+            width: auto;
+        }
+    }
+    .footer__mapa{
+        @media (max-width: 768px){
+            width: 150px;
+        }
+    }
+}
+.footer__componentes--tarjeta-envios{
+    grid-area: tarjeta-envios;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    text-align: center;
+    @media (max-width: 768px){
+            grid-area: tarjeta;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+    }
+    .footer__tarjeta{
+        @media (max-width: 768px){
+            width: 150px;
+        }
+    }
+    .footer__envios{
+        @media (max-width: 768px){
+            width: 150px;
+        }
+    }
+}
