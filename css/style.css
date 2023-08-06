@@ -644,6 +644,11 @@ nav {
   width: 80%;
   margin-bottom: 20px;
 }
+@media (max-width: 576px) {
+  .contenedor-productos-carrito-totales .producto {
+    width: 90%;
+  }
+}
 .contenedor-productos-carrito-totales .producto .imagen-titulo {
   display: flex;
   flex-direction: row;
@@ -744,7 +749,10 @@ nav {
   gap: 10px;
   margin-top: 100px;
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
+  .contenedor-totales {
+    width: 90%;
+  }
   .contenedor-totales h3 {
     font-size: 16px;
   }
