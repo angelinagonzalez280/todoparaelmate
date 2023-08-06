@@ -66,6 +66,21 @@ nav {
   align-items: center;
   margin: 0px;
 }
+@media (max-width: 768px) {
+  .navegador .inicio-contacto {
+    position: fixed;
+    top: 0px;
+    left: -300px;
+    width: 250px;
+    height: 100vh;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    background-color: #939393;
+    padding: 20px 0px 0px 20px;
+    transition: 1s;
+  }
+}
 .navegador .inicio-contacto li {
   list-style: none;
 }
@@ -83,21 +98,6 @@ nav {
 }
 .navegador .inicio-contacto .inicio-navegador {
   margin-right: 15px;
-}
-@media (max-width: 768px) {
-  .navegador .inicio-contacto {
-    position: fixed;
-    top: 0px;
-    left: -300px;
-    width: 250px;
-    height: 100vh;
-    flex-direction: column;
-    gap: 15px;
-    align-items: flex-start;
-    background-color: #939393;
-    padding: 20px 0px 0px 20px;
-    transition: 1s;
-  }
 }
 .navegador .inicio-contacto .letras-usuario {
   display: none;
@@ -162,7 +162,8 @@ nav {
     padding: 5px;
   }
 }
-.cajas-todos-productos .caja-producto {
+
+.caja-producto {
   border: 2px solid #212121;
   width: 250px;
   height: 300px;
@@ -176,43 +177,43 @@ nav {
   justify-content: center;
 }
 @media (max-width: 768px) {
-  .cajas-todos-productos .caja-producto {
+  .caja-producto {
     width: 225px;
     height: 275px;
   }
-  .cajas-todos-productos .caja-producto p {
+  .caja-producto p {
     font-size: 14px;
   }
-  .cajas-todos-productos .caja-producto h3 {
+  .caja-producto h3 {
     font-size: 22px;
   }
 }
 @media (max-width: 576px) {
-  .cajas-todos-productos .caja-producto {
+  .caja-producto {
     width: 180px;
     height: 220px;
     margin: 10px;
   }
-  .cajas-todos-productos .caja-producto p {
+  .caja-producto p {
     font-size: 12px;
   }
-  .cajas-todos-productos .caja-producto h3 {
+  .caja-producto h3 {
     font-size: 18px;
   }
 }
-.cajas-todos-productos .caja-producto .imagen-caja-producto {
+.caja-producto .imagen-caja-producto {
   width: 200px;
   height: 200px;
   object-fit: cover;
 }
 @media (max-width: 768px) {
-  .cajas-todos-productos .caja-producto .imagen-caja-producto {
+  .caja-producto .imagen-caja-producto {
     width: 175px;
     height: 175px;
   }
 }
 @media (max-width: 576px) {
-  .cajas-todos-productos .caja-producto .imagen-caja-producto {
+  .caja-producto .imagen-caja-producto {
     width: 150px;
     height: 150px;
   }
@@ -488,18 +489,48 @@ nav {
 
 .main-mates {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
-
-.contenedor-filtros-productos {
+.main-mates .contenedor-filtros-productos {
   margin: 10px;
   display: flex;
   justify-content: space-around;
   width: 90%;
   padding: 0px 20px;
 }
-
-.filtros {
+@media (max-width: 768px) {
+  .main-mates .contenedor-filtros-productos {
+    flex-direction: column;
+    padding: 0px;
+    width: 95%;
+  }
+}
+.main-mates .contenedor-filtros-productos .dropdown {
+  display: none;
+}
+@media (max-width: 768px) {
+  .main-mates .contenedor-filtros-productos .dropdown {
+    display: block;
+  }
+  .main-mates .contenedor-filtros-productos .dropdown button {
+    color: #F5EDED;
+    background-color: #212121;
+  }
+  .main-mates .contenedor-filtros-productos .dropdown .dropdown-menu {
+    padding: 15px;
+  }
+  .main-mates .contenedor-filtros-productos .dropdown h4 {
+    font-size: 14px;
+    border-bottom: 1px solid #212121;
+  }
+  .main-mates .contenedor-filtros-productos .dropdown label {
+    font-size: 12px;
+  }
+  .main-mates .contenedor-filtros-productos .dropdown .capacidad, .main-mates .contenedor-filtros-productos .dropdown .material {
+    margin-top: 10px;
+  }
+}
+.main-mates .contenedor-filtros-productos .filtros {
   width: 250px;
   padding: 10px;
   margin-top: 20px;
@@ -507,22 +538,36 @@ nav {
   border: 1px solid #000000;
   border-radius: 5px;
 }
-
-.filtros h4 {
-  margin: 10px;
+.main-mates .contenedor-filtros-productos .filtros h3 {
+  font-size: 20px;
 }
-
-.contenedor-filtros {
+.main-mates .contenedor-filtros-productos .filtros h4 {
+  margin: 10px;
+  font-size: 18px;
+}
+.main-mates .contenedor-filtros-productos .filtros label {
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .main-mates .contenedor-filtros-productos .filtros {
+    display: none;
+  }
+}
+.main-mates .contenedor-filtros-productos .filtros .contenedor-filtros {
   display: flex;
   flex-direction: column;
   margin: 10px;
 }
-
-.contenedor-productos {
+.main-mates .contenedor-filtros-productos .contenedor-productos {
   margin: 10px;
   width: auto;
   display: flex;
   flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .main-mates .contenedor-filtros-productos .contenedor-productos {
+    justify-content: space-evenly;
+  }
 }
 
 .contenedor-todo {
