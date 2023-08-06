@@ -377,11 +377,28 @@ nav {
   height: 20px;
   font-size: 10px;
 }
+@media (max-width: 768px) {
+  .boton-eliminar {
+    width: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .boton-eliminar {
+    width: 40px;
+    font-size: 8px;
+  }
+}
 
 .boton-pagar {
   width: 150px;
   height: 30px;
   font-size: 20px;
+}
+@media (max-width: 768px) {
+  .boton-pagar {
+    width: 100%;
+    font-size: 16px;
+  }
 }
 
 .boton-comprar, .boton-agregar {
@@ -637,9 +654,33 @@ nav {
   object-fit: cover;
   padding: 5px;
 }
+@media (max-width: 768px) {
+  .contenedor-productos-carrito-totales .producto .imagen-titulo img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 576px) {
+  .contenedor-productos-carrito-totales .producto .imagen-titulo img {
+    width: 75px;
+    height: 75px;
+  }
+}
 .contenedor-productos-carrito-totales .producto .imagen-titulo p {
-  width: 400px;
+  width: 350px;
   margin: 10px;
+}
+@media (max-width: 768px) {
+  .contenedor-productos-carrito-totales .producto .imagen-titulo p {
+    width: 250px;
+    font-size: 12px;
+    margin: 5px;
+  }
+}
+@media (max-width: 576px) {
+  .contenedor-productos-carrito-totales .producto .imagen-titulo p {
+    width: 150px;
+  }
 }
 .contenedor-productos-carrito-totales .producto .cantidad-boton-eliminar {
   display: flex;
@@ -656,6 +697,24 @@ nav {
   border: 0;
   border: 1px solid #000000;
 }
+@media (max-width: 768px) {
+  .contenedor-productos-carrito-totales .producto .cantidad-boton-eliminar input {
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .contenedor-productos-carrito-totales .producto .cantidad-boton-eliminar input {
+    width: 40px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .contenedor-productos-carrito-totales .producto .cantidad-boton-eliminar {
+    align-items: flex-start;
+  }
+}
 .contenedor-productos-carrito-totales .producto .precio-cuotas {
   display: flex;
   flex-direction: column;
@@ -664,6 +723,16 @@ nav {
 .contenedor-productos-carrito-totales .producto .precio-cuotas p {
   color: #939393;
   font-size: 10px;
+}
+@media (max-width: 576px) {
+  .contenedor-productos-carrito-totales .producto .precio-cuotas p {
+    font-size: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .contenedor-productos-carrito-totales .producto .precio-cuotas h3 {
+    font-size: 14px;
+  }
 }
 
 .contenedor-totales {
@@ -675,14 +744,36 @@ nav {
   gap: 10px;
   margin-top: 100px;
 }
+@media (max-width: 768px) {
+  .contenedor-totales h3 {
+    font-size: 16px;
+  }
+}
 .contenedor-totales .totales {
+  width: 100%;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .contenedor-totales .totales {
+    justify-content: space-between;
+  }
 }
 .contenedor-totales .envio-total {
   width: 300px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  text-align: right;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  .contenedor-totales .envio-total {
+    text-align: left;
+  }
+}
+.contenedor-totales .precios {
+  width: 300px;
+  display: flex;
   flex-direction: column;
   text-align: right;
   gap: 10px;

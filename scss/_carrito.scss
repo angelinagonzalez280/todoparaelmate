@@ -10,7 +10,6 @@
         align-items: center;
         width: 80%;
         margin-bottom: 20px;
-        
         .imagen-titulo{
             display: flex;
             flex-direction: row;
@@ -19,10 +18,26 @@
                 height: 125px;
                 object-fit: cover;
                 padding: 5px;
+                @media (max-width: 768px){
+                    width: 100px;
+                    height: 100px;
+                }
+                @media (max-width: 576px){
+                    width: 75px;
+                    height: 75px;
+                }
             }
             p{
-                width: 400px;
+                width: 350px;
                 margin: 10px;
+                @media (max-width: 768px){
+                    width: 250px ;
+                    font-size: 12px;
+                    margin: 5px;
+                }
+                @media (max-width: 576px){
+                    width: 150px;
+                }
             }
         }
         .cantidad-boton-eliminar{
@@ -38,6 +53,18 @@
                 text-align: center;
                 border: 0;
                 border: 1px solid $color-negro;
+                @media (max-width: 768px){
+                    width: 60px;
+                    height: 20px;
+                    font-size: 12px;
+                }
+                @media (max-width: 576px){
+                    width: 40px;
+                    font-size: 10px;
+                }
+            }
+            @media (max-width: 768px){
+                align-items:flex-start;
             }
         }
         .precio-cuotas{
@@ -47,6 +74,14 @@
             p{
                 color: $color-gris-claro;
                 font-size: 10px;
+                @media (max-width: 576px){
+                    font-size: 8px;
+                }
+            }
+            h3{
+                @media (max-width: 768px){
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -59,14 +94,33 @@
     align-items: end;
     gap: 10px;
     margin-top: 100px;
+    @media (max-width: 768px){
+        h3{
+            font-size: 16px;
+        }
+    }
     .totales{
+        width: 100%;
         display: flex;
-        justify-content: right;
+        justify-content: flex-end;
+        @media (max-width: 768px){
+            justify-content: space-between;
+        }
+
     }
     .envio-total{
         width: 300px;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        text-align: right;
+        gap:10px;
+        @media (max-width: 768px){
+            text-align: left;
+        }
+    }
+    .precios{
+        width: 300px;
+        display: flex;
         flex-direction: column;
         text-align: right;
         gap:10px;
