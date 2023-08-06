@@ -502,7 +502,8 @@ nav {
   .main-mates .contenedor-filtros-productos {
     flex-direction: column;
     padding: 0px;
-    width: 95%;
+    margin: 10px 0px 0px 10px;
+    width: 100%;
   }
 }
 .main-mates .contenedor-filtros-productos .dropdown {
@@ -567,6 +568,7 @@ nav {
 @media (max-width: 768px) {
   .main-mates .contenedor-filtros-productos .contenedor-productos {
     justify-content: space-evenly;
+    margin: 0px;
   }
 }
 

@@ -10,7 +10,8 @@
         @media (max-width: 768px){
             flex-direction: column;
             padding: 0px;
-            width: 95%;
+            margin: 10px 0px 0px 10px;
+            width: 100%;
         }
         .dropdown{
             display: none;
@@ -68,6 +69,7 @@
             flex-wrap: wrap;
             @media (max-width: 768px){
                 justify-content: space-evenly;
+                margin: 0px;
             }
         }
     }
