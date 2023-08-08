@@ -3,9 +3,10 @@
     text-align: center;
     text-transform: uppercase;
     color: $color-blanco;
-    background-color: $color-negro;
     padding: 20px 0px;
     margin: 0px;
+    font-weight: 100;
+    background-image: linear-gradient(to bottom, $color-negro, $color-negro, $color-gris);
 }
 .sub-titulo-productos-destacados{
     color: $color-blanco;
@@ -14,6 +15,7 @@
     text-transform: uppercase;
     padding: 15px 0px;
     font-size: 24px;
+    font-weight: 100;
 }
 .titulo-secundario{
     background-color: $color-negro;
@@ -22,4 +24,6 @@
     padding: 20px 0px;
     text-transform: uppercase;
     font-size: 24px;
+    font-weight: 100;
+    background-image: linear-gradient(to top, $color-negro, $color-gris);
 }

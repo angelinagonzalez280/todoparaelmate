@@ -176,6 +176,24 @@ nav {
   align-items: center;
   justify-content: center;
 }
+.caja-producto:hover p {
+  background-color: #212121;
+  color: #F5EDED;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 3px;
+  transition: 0.5s;
+  white-space: nowrap; /*esto es para que no se "desborde" el texto*/
+}
+.caja-producto:hover h3 {
+  background-color: #000000;
+  color: #F5EDED;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 3px;
+  transition: 0.5s;
+  font-weight: 100;
+}
 @media (max-width: 768px) {
   .caja-producto {
     width: 225px;
@@ -224,9 +242,9 @@ nav {
   justify-content: space-around;
   width: 100%;
   background-color: #212121;
+  background-image: linear-gradient(to bottom, #212121, #212121, #000000);
 }
-
-.imagen-categoria {
+.categorias-productos .imagen-categoria {
   height: 125px;
   width: 125px;
   border-radius: 50%;
@@ -234,9 +252,12 @@ nav {
   margin: 15px 0px;
   object-fit: cover;
 }
-
+.categorias-productos .imagen-categoria:hover {
+  transform: scale(1.1);
+  transition: 0.25s;
+}
 @media (max-width: 768px) {
-  .imagen-categoria {
+  .categorias-productos .imagen-categoria {
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -246,7 +267,7 @@ nav {
   }
 }
 @media (max-width: 576px) {
-  .imagen-categoria {
+  .categorias-productos .imagen-categoria {
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -255,6 +276,7 @@ nav {
     object-fit: cover;
   }
 }
+
 .enlace-whatsapp {
   position: fixed;
   right: 30px;
@@ -371,6 +393,7 @@ nav {
   background-color: #000000;
   color: #F5EDED;
   border-radius: 5px;
+  font-size: 14px;
 }
 
 .boton-eliminar {
@@ -418,41 +441,50 @@ nav {
   color: #212121;
   padding-top: 40px;
 }
+.sub-titulo-formulario h3 {
+  font-size: 22px;
+}
+@media (max-width: 768px) {
+  .sub-titulo-formulario h3 {
+    font-size: 18px;
+  }
+}
 
 .contenedor-formulario-contacto {
   display: flex;
   justify-content: center;
   margin: 30px 0px 250px 0px;
 }
-
-.formulario-contacto {
+.contenedor-formulario-contacto .formulario-contacto {
   width: 700px;
 }
-
 @media (max-width: 768px) {
-  .formulario-contacto {
+  .contenedor-formulario-contacto .formulario-contacto {
     width: 500px;
   }
 }
 @media (max-width: 568px) {
-  .formulario-contacto {
+  .contenedor-formulario-contacto .formulario-contacto {
     width: 400px;
+    font-size: 10px;
   }
 }
-.campo-formulario {
+.contenedor-formulario-contacto .formulario-contacto .campo-formulario {
   width: 100%;
   padding-top: 30px;
   border: 0;
   border-bottom: 1px solid #000000;
   outline: none; /* esto es para sacarle el focus al campo del formulario*/
+  font-size: 12px;
 }
-
-.contenedor-botones {
+.contenedor-formulario-contacto .formulario-contacto .campo-formulario:hover {
+  font-size: 14px;
+}
+.contenedor-formulario-contacto .formulario-contacto .contenedor-botones {
   display: flex;
   justify-content: right;
 }
-
-.boton-formulario-consulta {
+.contenedor-formulario-contacto .formulario-contacto .contenedor-botones .boton-formulario-consulta {
   width: 70px;
   height: 25px;
   padding: 5px;
@@ -464,9 +496,10 @@ nav {
   text-align: center;
   text-transform: uppercase;
   color: #F5EDED;
-  background-color: #000000;
   padding: 20px 0px;
   margin: 0px;
+  font-weight: 100;
+  background-image: linear-gradient(to bottom, #000000, #000000, #212121);
 }
 
 .sub-titulo-productos-destacados {
@@ -476,6 +509,7 @@ nav {
   text-transform: uppercase;
   padding: 15px 0px;
   font-size: 24px;
+  font-weight: 100;
 }
 
 .titulo-secundario {
@@ -485,53 +519,55 @@ nav {
   padding: 20px 0px;
   text-transform: uppercase;
   font-size: 24px;
+  font-weight: 100;
+  background-image: linear-gradient(to top, #000000, #212121);
 }
 
-.main-mates {
+.contenedor-todo {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
-.main-mates .contenedor-filtros-productos {
-  margin: 10px;
+.contenedor-todo .contenedor-filtros-productos {
   display: flex;
   justify-content: space-around;
   width: 90%;
+  margin: 10px;
   padding: 0px 20px;
 }
 @media (max-width: 768px) {
-  .main-mates .contenedor-filtros-productos {
+  .contenedor-todo .contenedor-filtros-productos {
     flex-direction: column;
     padding: 0px;
     margin: 10px 0px 0px 10px;
     width: 100%;
   }
 }
-.main-mates .contenedor-filtros-productos .dropdown {
+.contenedor-todo .contenedor-filtros-productos .dropdown {
   display: none;
 }
 @media (max-width: 768px) {
-  .main-mates .contenedor-filtros-productos .dropdown {
+  .contenedor-todo .contenedor-filtros-productos .dropdown {
     display: block;
   }
-  .main-mates .contenedor-filtros-productos .dropdown button {
+  .contenedor-todo .contenedor-filtros-productos .dropdown button {
     color: #F5EDED;
     background-color: #212121;
   }
-  .main-mates .contenedor-filtros-productos .dropdown .dropdown-menu {
+  .contenedor-todo .contenedor-filtros-productos .dropdown .dropdown-menu {
     padding: 15px;
   }
-  .main-mates .contenedor-filtros-productos .dropdown h4 {
+  .contenedor-todo .contenedor-filtros-productos .dropdown h4 {
     font-size: 14px;
     border-bottom: 1px solid #212121;
   }
-  .main-mates .contenedor-filtros-productos .dropdown label {
+  .contenedor-todo .contenedor-filtros-productos .dropdown label {
     font-size: 12px;
   }
-  .main-mates .contenedor-filtros-productos .dropdown .capacidad, .main-mates .contenedor-filtros-productos .dropdown .material {
+  .contenedor-todo .contenedor-filtros-productos .dropdown .capacidad, .contenedor-todo .contenedor-filtros-productos .dropdown .material {
     margin-top: 10px;
   }
 }
-.main-mates .contenedor-filtros-productos .filtros {
+.contenedor-todo .contenedor-filtros-productos .filtros {
   width: 250px;
   padding: 10px;
   margin-top: 20px;
@@ -539,34 +575,35 @@ nav {
   border: 1px solid #000000;
   border-radius: 5px;
 }
-.main-mates .contenedor-filtros-productos .filtros h3 {
+.contenedor-todo .contenedor-filtros-productos .filtros h3 {
   font-size: 20px;
 }
-.main-mates .contenedor-filtros-productos .filtros h4 {
+.contenedor-todo .contenedor-filtros-productos .filtros h4 {
   margin: 10px;
   font-size: 18px;
+  border-bottom: 1px solid #212121;
 }
-.main-mates .contenedor-filtros-productos .filtros label {
+.contenedor-todo .contenedor-filtros-productos .filtros label {
   font-size: 16px;
 }
 @media (max-width: 768px) {
-  .main-mates .contenedor-filtros-productos .filtros {
+  .contenedor-todo .contenedor-filtros-productos .filtros {
     display: none;
   }
 }
-.main-mates .contenedor-filtros-productos .filtros .contenedor-filtros {
+.contenedor-todo .contenedor-filtros-productos .filtros .contenedor-filtros {
   display: flex;
   flex-direction: column;
   margin: 10px;
 }
-.main-mates .contenedor-filtros-productos .contenedor-productos {
+.contenedor-todo .contenedor-filtros-productos .contenedor-productos {
   margin: 10px;
   width: auto;
   display: flex;
   flex-wrap: wrap;
 }
 @media (max-width: 768px) {
-  .main-mates .contenedor-filtros-productos .contenedor-productos {
+  .contenedor-todo .contenedor-filtros-productos .contenedor-productos {
     justify-content: space-evenly;
     margin: 0px;
   }
@@ -667,7 +704,7 @@ nav {
   }
 }
 .contenedor-todo .contenedor-imagenes-panel .panel .titulo-precio h3 {
-  font-size: 20px;
+  font-size: 22px;
   margin-top: 10px;
 }
 @media (max-width: 768px) {
@@ -728,6 +765,7 @@ nav {
   padding: 10px;
 }
 .descripcion h3 {
+  font-size: 20px;
   margin-bottom: 10px;
 }
 @media (max-width: 768px) {
@@ -757,6 +795,7 @@ nav {
   align-items: center;
   width: 80%;
   margin-bottom: 20px;
+  border-bottom: 1px solid #212121;
 }
 @media (max-width: 576px) {
   .contenedor-productos-carrito-totales .producto {
@@ -788,6 +827,7 @@ nav {
 .contenedor-productos-carrito-totales .producto .imagen-titulo p {
   width: 350px;
   margin: 10px;
+  font-size: 16px;
 }
 @media (max-width: 768px) {
   .contenedor-productos-carrito-totales .producto .imagen-titulo p {
@@ -848,6 +888,9 @@ nav {
     font-size: 8px;
   }
 }
+.contenedor-productos-carrito-totales .producto .precio-cuotas h3 {
+  font-size: 18px;
+}
 @media (max-width: 768px) {
   .contenedor-productos-carrito-totales .producto .precio-cuotas h3 {
     font-size: 14px;
@@ -862,6 +905,7 @@ nav {
   align-items: end;
   gap: 10px;
   margin-top: 100px;
+  font-size: 18px;
 }
 @media (max-width: 576px) {
   .contenedor-totales {
@@ -888,6 +932,9 @@ nav {
   text-align: right;
   gap: 10px;
 }
+.contenedor-totales .envio-total h3 {
+  font-size: 18px;
+}
 @media (max-width: 768px) {
   .contenedor-totales .envio-total {
     text-align: left;
@@ -899,6 +946,9 @@ nav {
   flex-direction: column;
   text-align: right;
   gap: 10px;
+}
+.contenedor-totales .precios h3 {
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,6 +10,7 @@
         align-items: center;
         width: 80%;
         margin-bottom: 20px;
+        border-bottom: 1px solid $color-gris;
         @media (max-width: 576px){
             width: 90%;
         }
@@ -33,6 +34,7 @@
             p{
                 width: 350px;
                 margin: 10px;
+                font-size: 16px;
                 @media (max-width: 768px){
                     width: 250px ;
                     font-size: 12px;
@@ -82,6 +84,7 @@
                 }
             }
             h3{
+                font-size: 18px;
                 @media (max-width: 768px){
                     font-size: 14px;
                 }
@@ -97,6 +100,7 @@
     align-items: end;
     gap: 10px;
     margin-top: 100px;
+    font-size: 18px;
     @media (max-width: 576px){
         width: 90%;
         h3{
@@ -118,6 +122,9 @@
         flex-direction: column;
         text-align: right;
         gap:10px;
+        h3{
+            font-size: 18px;
+        }
         @media (max-width: 768px){
             text-align: left;
         }
@@ -128,6 +135,9 @@
         flex-direction: column;
         text-align: right;
         gap:10px;
+        h3{
+            font-size: 18px;
+        }
     }
 }
 

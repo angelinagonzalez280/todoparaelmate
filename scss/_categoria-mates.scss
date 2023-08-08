@@ -1,11 +1,11 @@
-.main-mates{
+.contenedor-todo{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     .contenedor-filtros-productos{
-        margin: 10px;
         display: flex;
         justify-content: space-around;
         width: 90%;
+        margin: 10px;
         padding: 0px 20px;
         @media (max-width: 768px){
             flex-direction: column;
@@ -49,6 +49,7 @@
             h4{
                 margin: 10px;
                 font-size: 18px;
+                border-bottom: 1px solid $color-gris;
             }
             label{
                 font-size: 16px;
