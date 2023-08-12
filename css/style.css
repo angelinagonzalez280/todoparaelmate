@@ -19,16 +19,6 @@ h3 {
   font-weight: bold;
 }
 
-.icon {
-  width: 24px;
-  height: 24px;
-  stroke: #F5EDED;
-  stroke-width: 1.5px;
-  fill: none;
-  stroke-linecap: round; /*esta y la propiedad de abajo le dan el redondeado a los bordes*/
-  stroke-linejoin: round;
-}
-
 nav {
   z-index: 1000;
 }
@@ -396,56 +386,6 @@ nav {
   }
 }
 
-.boton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0;
-  background-color: #000000;
-  color: #F5EDED;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.boton-eliminar {
-  width: 80px;
-  height: 20px;
-  font-size: 10px;
-}
-@media (max-width: 768px) {
-  .boton-eliminar {
-    width: 60px;
-  }
-}
-@media (max-width: 576px) {
-  .boton-eliminar {
-    width: 40px;
-    font-size: 8px;
-  }
-}
-
-.boton-pagar {
-  width: 150px;
-  height: 30px;
-  font-size: 20px;
-}
-@media (max-width: 768px) {
-  .boton-pagar {
-    width: 100%;
-    font-size: 16px;
-  }
-}
-
-.boton-comprar, .boton-agregar {
-  width: auto;
-  height: 30px;
-}
-@media (max-width: 768px) {
-  .boton-comprar, .boton-agregar {
-    font-size: 16px;
-  }
-}
-
 .sub-titulo-formulario {
   text-align: center;
   font-size: 20px;
@@ -485,7 +425,7 @@ nav {
   padding-top: 30px;
   border: 0;
   border-bottom: 1px solid #000000;
-  outline: none; /* esto es para sacarle el focus al campo del formulario*/
+  outline: none;
   font-size: 12px;
 }
 .contenedor-formulario-contacto .formulario-contacto .campo-formulario:hover {
@@ -500,6 +440,16 @@ nav {
   height: 25px;
   padding: 5px;
   margin: 6px;
+}
+.contenedor-formulario-contacto .formulario-contacto .contenedor-botones .boton {
+  font-size: 14px;
+  color: #F5EDED;
+  background-color: #000000;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  display: flex;
 }
 
 .titulo {
@@ -669,8 +619,8 @@ nav {
   }
 }
 .contenedor-todo .contenedor-imagenes-panel .contenedor-imagenes .producto-foto-principal {
-  width: 600px;
-  height: 600px;
+  width: 550px;
+  height: 550px;
   object-fit: cover;
   margin-left: 10px;
 }
@@ -691,7 +641,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 300px;
+  width: 250px;
   height: 500px;
   border: 1px solid #212121;
   border-radius: 5px;
@@ -741,7 +691,7 @@ nav {
   width: 80px;
   height: 30px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   border: 0;
   border: 1px solid #000000;
@@ -760,6 +710,23 @@ nav {
   flex-direction: column;
   gap: 10px;
 }
+.contenedor-todo .contenedor-imagenes-panel .panel .contenedor-cantidad-botones .boton-comprar-agregar .boton {
+  font-size: 16px;
+  color: #F5EDED;
+  background-color: #000000;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  display: flex;
+  width: auto;
+  height: 30px;
+}
+@media (max-width: 768px) {
+  .contenedor-todo .contenedor-imagenes-panel .panel .contenedor-cantidad-botones .boton-comprar-agregar .boton {
+    font-size: 16px;
+  }
+}
 
 .descripcion {
   display: flex;
@@ -770,10 +737,15 @@ nav {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 80%;
+  width: 70%;
   border: 1px solid #212121;
   border-radius: 5px;
   padding: 10px;
+}
+@media (max-width: 768px) {
+  .descripcion div {
+    width: 80%;
+  }
 }
 .descripcion h3 {
   font-size: 20px;
@@ -860,9 +832,9 @@ nav {
 }
 .contenedor-productos-carrito-totales .producto .cantidad-boton-eliminar input {
   width: 80px;
-  height: 30px;
+  height: 25px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   border: 0;
   border: 1px solid #000000;
@@ -883,6 +855,29 @@ nav {
 @media (max-width: 768px) {
   .contenedor-productos-carrito-totales .producto .cantidad-boton-eliminar {
     align-items: flex-start;
+  }
+}
+.contenedor-productos-carrito-totales .producto .cantidad-boton-eliminar .boton {
+  font-size: 12px;
+  color: #F5EDED;
+  background-color: #000000;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  display: flex;
+  width: 80px;
+  height: 20px;
+}
+@media (max-width: 768px) {
+  .contenedor-productos-carrito-totales .producto .cantidad-boton-eliminar .boton {
+    width: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .contenedor-productos-carrito-totales .producto .cantidad-boton-eliminar .boton {
+    width: 40px;
+    font-size: 8px;
   }
 }
 .contenedor-productos-carrito-totales .producto .precio-cuotas {
@@ -917,6 +912,24 @@ nav {
   gap: 10px;
   margin-top: 100px;
   font-size: 18px;
+}
+.contenedor-totales .boton {
+  font-size: 20px;
+  color: #F5EDED;
+  background-color: #000000;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  display: flex;
+  width: 150px;
+  height: 30px;
+}
+@media (max-width: 768px) {
+  .contenedor-totales .boton {
+    width: 100%;
+    font-size: 16px;
+  }
 }
 @media (max-width: 576px) {
   .contenedor-totales {
@@ -960,6 +973,16 @@ nav {
 }
 .contenedor-totales .precios h3 {
   font-size: 18px;
+}
+
+.navegador .icon, .footer__componentes .icon {
+  width: 24px;
+  height: 24px;
+  stroke: #F5EDED;
+  stroke-width: 1.5px;
+  fill: none;
+  stroke-linecap: round; /*esta y la propiedad de abajo le dan el redondeado a los bordes*/
+  stroke-linejoin: round;
 }
 
 /*# sourceMappingURL=style.css.map */
