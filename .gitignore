@@ -1,6 +1,8 @@
-/node_module
+/node_modules
 .vscode
 .DS_Store
 package.json
 *.scss
 scss/
+*.json
+package-lock.json
