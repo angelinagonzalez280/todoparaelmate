@@ -314,7 +314,7 @@ nav {
     align-items: center;
     background-color: #000000;
     color: #F5EDED;
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 .footer__componentes .footer__componentes--ubicacion-horario {
@@ -334,6 +334,7 @@ nav {
 @media (max-width: 768px) {
   .footer__componentes .footer__componentes--ubicacion-horario .footer__horario {
     width: 150px;
+    white-space: nowrap;
   }
 }
 @media (max-width: 768px) {
