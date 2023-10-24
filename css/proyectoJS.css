@@ -1,0 +1,252 @@
+/* Codigo nuevo para el proyecto de JavaScript */
+
+#carrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    width: 100%;
+}
+
+.producto {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin: 20px 0px;
+    width: 500px;
+}
+
+.producto-imagen-nombre {
+    display: flex;
+}
+
+.producto-imagen {
+    width: 100px;
+    height: 100px;
+}
+
+.producto-nombre {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.producto-precio-eliminar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: end;
+}
+
+.boton-eliminar-carrito {
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+
+#envio-total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.precio-total {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: 20px 0px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.p-total,
+.p-numero {
+    font-size: 25px;
+}
+
+.pagar {
+    display: flex;
+    width: 500px;
+    justify-content: end;
+}
+
+.boton-pagar {
+    width: 175px;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-color: black;
+    color: white;
+
+}
+
+/* Codigo copiado de style.css para que no se rompa todo el codigo porque no tengo el sass original */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oxygen", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+p {
+    margin: 0px;
+}
+
+h3 {
+    margin: 0px;
+    font-weight: bold;
+    height: 25px;
+}
+
+.navegador .icon,
+.footer__componentes .icon {
+    width: 24px;
+    height: 24px;
+    stroke: #F5EDED;
+    stroke-width: 1.5px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.navegador .icono-menu {
+    display: none;
+}
+
+.navegador {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 70px;
+    align-items: center;
+    width: 100%;
+    background-color: #212121;
+    position: sticky;
+    top: 0px;
+}
+
+.navegador .icono-menu {
+    display: none;
+}
+
+.titulo,
+.sub-titulo-productos-destacados,
+.sub-titulo-categorias,
+.titulo-secundario {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #F5EDED;
+    margin: 0px;
+}
+
+.titulo {
+    padding: 20px 0px;
+    font-size: 30px;
+    background-image: linear-gradient(to bottom, #000000, #000000, #212121);
+}
+
+.sub-titulo-productos-destacados {
+    background-color: #000000;
+    padding: 15px 0px;
+    font-size: 22px;
+}
+
+.sub-titulo-categorias {
+    background-color: #212121;
+    padding-top: 10px;
+    font-size: 22px;
+}
+
+.titulo-secundario {
+    padding: 20px 0px;
+    font-size: 24px;
+    background-image: linear-gradient(to top, #000000, #212121);
+}
+
+.navegador .inicio-contacto {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+
+.navegador .inicio-contacto li {
+    list-style: none;
+}
+
+.navegador .inicio-contacto .letras-enlaces-navegador {
+    font-size: 16px;
+    color: #F5EDED;
+    padding: 10px;
+}
+
+.navegador .inicio-contacto .inicio-navegador {
+    margin-right: 15px;
+}
+
+.navegador .inicio-contacto .letras-usuario {
+    display: none;
+    padding-top: 0px;
+}
+
+.navegador .buscador-carrito-usuario .carrito,
+.navegador .lupa {
+    margin-right: 15px;
+}
+
+.navegador ul:hover {
+    left: 0px;
+}
+
+
+.footer__componentes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px;
+    grid-template-areas: "ubicacion-horario mapa tarjeta-envios";
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-items: center;
+    background-color: #000000;
+    color: #F5EDED;
+    font-size: 12px;
+}
+
+.footer__componentes .footer__componentes--ubicacion-horario {
+    grid-area: ubicacion-horario;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.footer__componentes .footer__componentes--mapa {
+    grid-area: mapa;
+    width: 300px;
+    height: 100px;
+}
+
+.footer__componentes--tarjeta-envios {
+    grid-area: tarjeta-envios;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    text-align: center;
+}
