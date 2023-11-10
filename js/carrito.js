@@ -1,5 +1,13 @@
 const productosCarrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
+fetch('../productos.json')
+    .then(response => response.json())
+    .then(productos => {
+        console.log(productos);
+        eliminarCarrito(productos)
+    })
+    .catch(error => console.error('Error al cargar el archivo JSON:', error));
+
 function mostrarCarrito() {
     const carrito = document.querySelector("#carrito");
     productosCarrito.forEach((producto) => {
@@ -49,12 +57,15 @@ mostrarCarrito();
 
 const botonEliminar = document.querySelectorAll(".boton-eliminar-carrito");
 
-botonEliminar.forEach((boton) => {
-    boton.addEventListener("click", () => {
-        const idBoton = parseInt(boton.getAttribute("id"));
-        const productoEliminado = productos.find((producto) => producto.id === idBoton);
-        productosCarrito.splice(productoEliminado, 1);
-        localStorage.setItem('carrito', JSON.stringify(productosCarrito));
-        window.location.reload();
+function eliminarCarrito(productos) {
+    botonEliminar.forEach((boton) => {
+        boton.addEventListener("click", () => {
+            const idBoton = parseInt(boton.getAttribute("id"));
+            const productoEliminado = productos.find((producto) => producto.id === idBoton);
+            productosCarrito.splice(productoEliminado, 1);
+            localStorage.setItem('carrito', JSON.stringify(productosCarrito));
+            window.location.reload();
+        })
     })
-})
+}
+

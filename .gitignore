@@ -4,5 +4,4 @@
 package.json
 *.scss
 scss/
-*.json
 package-lock.json
