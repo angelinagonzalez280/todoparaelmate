@@ -5,8 +5,7 @@ const botonAgregar = document.querySelectorAll(".boton-añadir");
 fetch('../productos.json')
     .then(response => response.json())
     .then(productos => {
-        console.log(productos);
-        agregarCarrito(productos)
+        agregarCarrito(productos);
     })
     .catch(error => console.error('Error al cargar el archivo JSON:', error));
 

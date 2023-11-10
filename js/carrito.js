@@ -3,8 +3,7 @@ const productosCarrito = JSON.parse(localStorage.getItem('carrito')) || [];
 fetch('../productos.json')
     .then(response => response.json())
     .then(productos => {
-        console.log(productos);
-        eliminarCarrito(productos)
+        eliminarCarrito(productos);
     })
     .catch(error => console.error('Error al cargar el archivo JSON:', error));
 
@@ -65,7 +64,7 @@ function eliminarCarrito(productos) {
             productosCarrito.splice(productoEliminado, 1);
             localStorage.setItem('carrito', JSON.stringify(productosCarrito));
             window.location.reload();
-        })
-    })
+        });
+    });
 }
 
