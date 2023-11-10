@@ -16,7 +16,6 @@ function agregarCarrito(productos) {
             const productoSeleccionado = productos.find((producto) => producto.id === idProducto);
             productosCarrito.push(productoSeleccionado);
             localStorage.setItem('carrito', JSON.stringify(productosCarrito));
-            console.log(productosCarrito);
         });
     });
 }

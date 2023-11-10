@@ -3,48 +3,48 @@
         "id": 1,
         "nombre": "Mate Imperial 500ml",
         "precio": 2500,
-        "imagen": "./multimedia/imagenes/mate-imperial-calabaza.jpg"
+        "imagen": "https://matesibarra.com/wp-content/uploads/2021/06/linea-f.jpg"
     },
     {
         "id": 2,
         "nombre": "Termo Terrano 1l",
         "precio": 1500,
-        "imagen": "./multimedia/imagenes/termo-terrano.jpg"
+        "imagen": "https://cdn.digi.com.py/storage/App/Models/ProductImage/000/004/153/image/large/termo-premium-750ml-blanco.webp"
     },
     {
         "id": 3,
         "nombre": "Bombilla de acero inoxidable",
         "precio": 400,
-        "imagen": "./multimedia/imagenes/bombilla-sola.jpg"
+        "imagen": "https://cdn11.bigcommerce.com/s-21ihm6p1wp/images/stencil/1280x1280/products/888/1305/pico__42762.1610038462.1280.1280__03664.1662638639.jpg?c=1"
     },
     {
         "id": 4,
         "nombre": "Matera Terrano de cuero",
         "precio": 1200,
-        "imagen": "./multimedia/imagenes/matera-terrano-multicolor.jpg"
+        "imagen": "https://www.botiga.com.uy/media/catalog/product/cache/1/image/300x300/9df78eab33525d08d6e5fb8d27136e95/m/a/matera_bolsito_crema.jpg"
     },
     {
         "id": 5,
         "nombre": "Mate Terrano 300ml",
         "precio": 600,
-        "imagen": "./multimedia/imagenes/mate-acero-terrano-bordo.jpg"
+        "imagen": "https://f.fcdn.app/imgs/ef5218/terrano.com.uy/terauy/39df/original/catalogo/3020_3020A_2/2000-2000/mate-acero-inox-camionero-azul-metalizado.jpg"
     },
     {
         "id": 6,
         "nombre": "Termo Zenit 1l",
         "precio": 1300,
-        "imagen": "./multimedia/imagenes/termo-zenit-azul.jpg"
+        "imagen": "https://zenit.uy/27559-home_default/termo-colores-750-ml.jpg"
     },
     {
         "id": 7,
         "nombre": "Bombilla resorte",
         "precio": 600,
-        "imagen": "./multimedia/imagenes/bombilla-resorte.jpg"
+        "imagen": "https://saboresdelplata.es/wp-content/uploads/2018/08/bombilla-mate-Larga-con-Resorte-Inoxidable.jpg"
     },
     {
         "id": 8,
         "nombre": "Matera Terrano de nylon",
         "precio": 1000,
-        "imagen": "./multimedia/imagenes/matera-azul-terrano.jpg"
+        "imagen": "https://f.fcdn.app/imgs/e475d5/terrano.com.uy/terauy/840d/original/catalogo/7020_086_1/1920-1200/mochila-matera-azul.jpg"
     }
 ]
